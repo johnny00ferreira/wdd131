@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #009739;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
+footer {
+    background-color: #002776;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
