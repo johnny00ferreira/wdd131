@@ -1,4 +1,5 @@
-const lastModified = document.lastModified;
-const footerText = document.querySelector("#lastModified");
+const yearSpan = document.querySelector("#year");
+const modifiedSpan = document.querySelector("#modified");
 
-footerText.textContent = `Last modified: ${lastModified}`;
+yearSpan.textContent = new Date().getFullYear();
+modifiedSpan.textContent = document.lastModified;
