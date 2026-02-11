@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clean Beaches | Participate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our beach cleaning initiative.">
+    <meta name="author" content="Johnny Ferreira da Silva">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Clean Beaches</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recycle.html">How to Recycle</a></li>
+                <li><a href="participate.html">Participate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Volunteer Registration</h2>
+            <p>Fill out the form below to join our beach preservation initiative.</p>
+
+            <form id="volunteerForm">
+
+                <div>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div>
+                    <label for="role">Participation Type</label><br>
+                    <select id="role" name="role" required>
+                        <option value="">Select an option</option>
+                        <option value="Beach Cleanup">Beach Cleanup</option>
+                        <option value="Recycling Education">Recycling Education</option>
+                        <option value="Event Organizer">Event Organizer</option>
+                    </select>
+                </div>
+
+                <br>
+                <button type="submit">Register</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </section>
+
+        <section>
+            <h2>Registered Volunteers</h2>
+            <ul id="volunteerList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Clean Beaches | WDD131 Project | Johnny Ferreira Da Silva</p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
