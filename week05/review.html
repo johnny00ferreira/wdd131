@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Submitted</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script defer>
-        let count = Number(localStorage.getItem("reviewCount")) || 0;
-        count++;
-        localStorage.setItem("reviewCount", count);
-    </script>
 </head>
 
 <body>
@@ -29,8 +24,12 @@
     </footer>
 
     <script>
-        document.getElementById("count").textContent =
-            localStorage.getItem("reviewCount");
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = Number(localStorage.getItem("reviewCount")) || 0;
+            count++;
+            localStorage.setItem("reviewCount", count);
+            document.getElementById("count").textContent = count;
+        });
     </script>
 
 </body>
